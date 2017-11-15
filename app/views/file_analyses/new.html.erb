@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h2>Analyze File</h2>
+      <%= form_tag({ action: "create" }, multipart: true) do %>
+        <div class="form-group">
+          <%= file_field_tag "file" %>  
+        </div>
+        
+        <div class="actions">
+          <%= submit_tag "Analyze", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
