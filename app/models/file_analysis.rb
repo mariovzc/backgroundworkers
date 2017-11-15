@@ -1,0 +1,2 @@
+class FileAnalysis < ApplicationRecord
+end
